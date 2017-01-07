@@ -46,7 +46,7 @@
                             <constraint firstItem="AJp-DK-dSN" firstAttribute="centerY" secondItem="kMX-vB-HaI" secondAttribute="centerY" id="yJR-SI-Eg4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Notify" id="CHr-hV-gxz"/>
+                    <tabBarItem key="tabBarItem" title="Notify" image="d" id="CHr-hV-gxz"/>
                     <connections>
                         <outlet property="lblDistanceTravelled" destination="5hv-0e-vKI" id="3cE-50-A1R"/>
                     </connections>
@@ -82,7 +82,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="DMF-OB-sUM" secondAttribute="trailing" id="O9b-2a-St7"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="GeoCode" id="b2U-5V-UgH"/>
+                    <tabBarItem key="tabBarItem" title="GeoCode" image="l" id="b2U-5V-UgH"/>
                     <connections>
                         <outlet property="lblLocation" destination="DMF-OB-sUM" id="pgU-Nn-QCx"/>
                     </connections>
@@ -154,7 +154,9 @@
                             <constraint firstAttribute="trailing" secondItem="mMc-6c-pFP" secondAttribute="trailing" id="nMZ-30-xrr"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Records" id="NCf-2m-NvT"/>
+                    <tabBarItem key="tabBarItem" title="Records" image="r" id="NCf-2m-NvT">
+                        <inset key="imageInsets" minX="150" minY="150" maxX="150" maxY="150"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="tableView" destination="mMc-6c-pFP" id="XKh-Mo-D4B"/>
                     </connections>
@@ -164,4 +166,9 @@
             <point key="canvasLocation" x="-287" y="501"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="d" width="64" height="64"/>
+        <image name="l" width="64" height="64"/>
+        <image name="r" width="64" height="64"/>
+    </resources>
 </document>
